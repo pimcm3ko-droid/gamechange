@@ -1,0 +1,606 @@
+@charset "UTF-8";
+main {
+  width: 100%;
+  background-color: rgb(245, 243, 238);
+  font-size: 12px;
+}
+
+section {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  section {
+    max-width: 460px;
+  }
+}
+
+.section_title {
+  width: 100%;
+  padding: 12px 0;
+  text-align: center;
+  font-size: 21px;
+  color: #fff;
+}
+
+.bg_color1 {
+  background-color: rgb(46, 125, 79);
+}
+
+.bg_color2 {
+  background-color: rgb(204, 51, 51);
+}
+
+ol {
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  background-color: rgb(204, 51, 51);
+  border: solid 2px rgb(204, 51, 51);
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.6s ease;
+}
+
+a:hover {
+  background-color: #fff;
+  color: rgb(204, 51, 51);
+}
+
+img {
+  width: 100%;
+  height: 24vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+span {
+  font-weight: 700;
+  color: rgb(204, 51, 51);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  align-items: center;
+  background-color: rgb(46, 125, 79);
+  text-align: center;
+}
+header h1 {
+  margin-right: 12px;
+  font-size: 12px;
+  color: #fff;
+}
+header a {
+  position: relative;
+  width: 130px;
+  padding: 5px 0px;
+  padding-right: 16px;
+  border-radius: 30px;
+  font-size: 12px;
+}
+header a::after {
+  /* Border方式 */
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: 10%;
+  border-style: solid;
+  border-width: 5px 0px 5px 10px;
+  border-color: transparent transparent transparent #FFF;
+  transform: translateY(-50%);
+  transition: all 0.6s ease;
+}
+header a:hover::after {
+  border-color: transparent transparent transparent rgb(204, 51, 51);
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(245, 243, 238);
+  font-size: 6px;
+  color: #fff;
+}
+footer .copy {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px 0;
+  background-color: rgb(34, 34, 34);
+}
+@media (max-width: 900px) {
+  footer .copy {
+    max-width: 460px;
+  }
+}
+
+.mainvisual {
+  margin-top: 35px;
+  padding: 8px 24px;
+  background-color: #fff;
+  text-align: center;
+  color: #fff;
+}
+.mainvisual img {
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.mainvisual .mv_form {
+  margin-top: 16px;
+  padding-bottom: 16px;
+  text-align: left;
+}
+.mainvisual .mv_form .wpcf7, .mainvisual .mv_form form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 8px;
+  background-color: #fff;
+}
+.mainvisual .mv_form .wpcf7 .mv_form_title, .mainvisual .mv_form form .mv_form_title {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(34, 34, 34);
+}
+.mainvisual .mv_form .wpcf7 dl dt, .mainvisual .mv_form form dl dt {
+  margin-top: 10px;
+  padding: 4px 0;
+  font-weight: 700;
+  color: rgb(34, 34, 34);
+}
+.mainvisual .mv_form .wpcf7 dl dt p, .mainvisual .mv_form .wpcf7 dl dt label, .mainvisual .mv_form form dl dt p, .mainvisual .mv_form form dl dt label {
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 9px;
+}
+.mainvisual .mv_form .wpcf7 dl dd, .mainvisual .mv_form form dl dd {
+  border: solid 1px rgb(153, 153, 153);
+  line-height: 3;
+}
+.mainvisual .mv_form .wpcf7 dl dd p, .mainvisual .mv_form form dl dd p {
+  margin: 0;
+  font-size: 12px;
+}
+.mainvisual .mv_form .wpcf7 dl dd input, .mainvisual .mv_form .wpcf7 dl dd select, .mainvisual .mv_form form dl dd input, .mainvisual .mv_form form dl dd select {
+  width: 100%;
+  padding: 0 4px;
+}
+.mainvisual .mv_form .wpcf7 .wpcf7-submit, .mainvisual .mv_form .wpcf7 .form-btn, .mainvisual .mv_form form .wpcf7-submit, .mainvisual .mv_form form .form-btn {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 8px;
+  padding: 8px 0;
+  background-color: rgb(204, 51, 51);
+  border: solid 2px rgb(204, 51, 51);
+  border-radius: 30px;
+  font-size: 12px;
+  color: #fff;
+  transition: all 0.6s ease;
+}
+.mainvisual .mv_form .wpcf7 .wpcf7-submit:hover, .mainvisual .mv_form .wpcf7 .form-btn:hover, .mainvisual .mv_form form .wpcf7-submit:hover, .mainvisual .mv_form form .form-btn:hover {
+  background-color: #fff;
+  color: rgb(204, 51, 51);
+}
+.mainvisual .mv_form .wpcf7 .wpcf7-spinner, .mainvisual .mv_form form .wpcf7-spinner {
+  display: none;
+}
+.mainvisual .mv_form .wpcf7 p, .mainvisual .mv_form form p {
+  margin: 8px 0;
+  text-align: center;
+  font-size: 10px;
+  color: rgb(34, 34, 34);
+}
+
+.problem {
+  background-color: #fff;
+}
+.problem .problem_wrapper {
+  padding: 8px;
+}
+.problem .problem_wrapper ul li {
+  padding: 8px;
+  border-bottom: solid 1px rgb(240, 240, 240);
+}
+.problem .problem_wrapper ul li span {
+  padding-right: 8px;
+  color: rgb(46, 125, 79);
+}
+.problem .problem_wrapper ul li:last-child {
+  border-bottom: none;
+}
+.problem .problem_wrapper p {
+  padding: 8px;
+  background-color: rgb(204, 51, 51);
+  text-align: center;
+  color: #fff;
+}
+
+.example {
+  padding-bottom: 16px;
+  background-color: rgb(255, 249, 230);
+}
+.example .example_subtitle {
+  padding: 16px 0;
+  text-align: center;
+  font-size: 21px;
+  font-family: "Noto Serif JP", sans-serif;
+  font-weight: 700;
+}
+.example .example_text {
+  width: 100%;
+  margin: 0 auto;
+  padding: 8px;
+  background-color: #fff;
+  line-height: 1.6;
+}
+.example .example_text p {
+  padding-bottom: 8px;
+}
+.example .example_text .example_text_contents li {
+  color: rgb(204, 51, 51);
+}
+.example .example_text .example_highlight {
+  padding: 8px 0;
+  background-color: rgb(204, 51, 51);
+  text-align: center;
+  font-family: "Noto Serif JP", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+.example .example_text .example_highlight span {
+  font-size: 16px;
+  color: #fff;
+}
+
+.result {
+  padding-bottom: 16px;
+  background-color: rgb(255, 249, 230);
+}
+.result .result_wrapper {
+  margin: 16px 8px;
+  margin-bottom: 0;
+  padding: 16px 0;
+  background-color: rgb(240, 240, 240);
+  text-align: center;
+}
+.result .result_wrapper .result_subtitle {
+  font-size: 16px;
+}
+.result .result_wrapper .result_subtitle .before {
+  font-size: 40px;
+  color: rgb(46, 125, 79);
+}
+.result .result_wrapper .result_subtitle .arrow {
+  margin: 0 8px;
+  font-size: 48px;
+  color: rgb(153, 153, 153);
+}
+.result .result_wrapper .result_subtitle .after {
+  font-size: 80px;
+}
+.result .result_wrapper ul {
+  width: 100%;
+  max-width: 260px;
+  margin: 8px auto;
+}
+.result .result_wrapper ul li {
+  padding: 8px 0;
+  text-align: left;
+  border-bottom: solid 1px rgb(34, 34, 34);
+  font-size: 14px;
+  font-weight: 700;
+}
+.result .result_wrapper ul li span {
+  padding-right: 8px;
+  color: rgb(46, 125, 79);
+}
+
+.change {
+  background-color: rgb(255, 249, 230);
+}
+.change .change_text {
+  padding: 16px;
+  background-color: #fff;
+  line-height: 2;
+}
+.change .change_text p:first-of-type {
+  font-size: 12px;
+}
+.change .btn {
+  width: 100%;
+  padding: 10px 0;
+  background: rgb(46, 125, 79);
+  text-align: center;
+  border: solid 2px rgb(46, 125, 79);
+}
+.change .btn .CTA {
+  padding-bottom: 4px;
+  font-size: 12px;
+}
+.change .btn:hover {
+  background: #fff;
+  color: rgb(46, 125, 79);
+}
+
+.obtain {
+  background-color: rgb(232, 245, 233);
+}
+.obtain ol {
+  padding: 8px;
+}
+.obtain ol li {
+  margin: 4px;
+  padding: 8px;
+  background-color: rgb(254, 240, 240);
+  border-left: solid 3px rgb(204, 51, 51);
+  font-weight: 700;
+}
+.obtain ol li span {
+  padding-right: 8px;
+  color: rgb(46, 125, 79);
+}
+
+.reason {
+  background-color: #fff;
+}
+.reason .reason_wrapper {
+  padding: 8px;
+}
+.reason .reason_wrapper ul li {
+  padding: 8px;
+  border-bottom: solid 1px rgb(240, 240, 240);
+  font-size: 14px;
+  font-weight: 700;
+}
+.reason .reason_wrapper ul li span {
+  padding-right: 8px;
+  color: rgb(46, 125, 79);
+}
+.reason .reason_wrapper ul li:last-child {
+  border-bottom: none;
+}
+.reason .reason_wrapper p {
+  padding: 8px;
+  text-align: center;
+}
+
+.content {
+  background-color: rgb(254, 240, 240);
+}
+.content ol li {
+  padding: 4px;
+  padding-left: 0;
+  border-bottom: solid 1px rgb(153, 153, 153);
+}
+.content ol li span {
+  margin-right: 4px;
+  padding: 4px;
+  background-color: rgb(204, 51, 51);
+  border-bottom: solid 1px rgb(204, 51, 51);
+  color: #fff;
+}
+
+.target {
+  background-color: rgb(232, 245, 233);
+}
+.target .items {
+  display: flex;
+  justify-content: space-between;
+}
+.target .items .item1, .target .items .item2 {
+  width: 50%;
+  margin: 8px;
+}
+.target .items .item1 .item_title, .target .items .item2 .item_title {
+  padding: 4px;
+  text-align: center;
+  color: #fff;
+}
+.target .items .item1 ul, .target .items .item2 ul {
+  padding: 8px 4px;
+  line-height: 2;
+}
+.target .items .item1 ul li span, .target .items .item2 ul li span {
+  margin-right: 8px;
+  padding: 4px;
+}
+.target .items .item1 {
+  border: solid 1px rgb(46, 125, 79);
+}
+.target .items .item1 .item_title {
+  background-color: rgb(46, 125, 79);
+}
+.target .items .item1 ul li span {
+  color: rgb(46, 125, 79);
+}
+.target .items .item2 {
+  background-color: #fff;
+  border: solid 1px rgb(153, 153, 153);
+}
+.target .items .item2 .item_title {
+  background-color: rgb(153, 153, 153);
+}
+.target .items .item2 ul li span {
+  margin-right: 8px;
+  color: rgb(153, 153, 153);
+}
+
+.instructor {
+  padding-bottom: 4px;
+  background-color: rgb(232, 245, 233);
+}
+.instructor .instructor_wrapper {
+  padding: 16px;
+  background-color: #fff;
+}
+.instructor .instructor_wrapper .profile {
+  display: flex;
+  justify-content: space-between;
+}
+.instructor .instructor_wrapper .profile .profile_wrapper {
+  margin: 8px;
+}
+.instructor .instructor_wrapper .profile .profile_wrapper .profile_text, .instructor .instructor_wrapper .profile .profile_wrapper .skill {
+  padding: 8px 0;
+}
+.instructor .instructor_wrapper .profile .profile_wrapper .name {
+  font-weight: 700;
+  color: rgb(46, 125, 79);
+}
+.instructor .instructor_wrapper .profile .profile_wrapper .name p:first-child {
+  margin-bottom: 4px;
+}
+.instructor .instructor_wrapper .profile .profile_wrapper .name p:nth-of-type(2) {
+  font-size: 16px;
+}
+.instructor .instructor_wrapper .profile .profile_wrapper .name p:last-child {
+  color: rgb(34, 34, 34);
+}
+.instructor .instructor_wrapper .profile .profile_wrapper .profile_text, .instructor .instructor_wrapper .profile .profile_wrapper .skill {
+  border-bottom: solid 1px rgb(153, 153, 153);
+}
+.instructor .instructor_wrapper .profile .profile_wrapper .profile_text p {
+  padding-bottom: 8px;
+}
+.instructor .instructor_wrapper .profile .profile_wrapper .profile_text p strong {
+  background-color: rgb(254, 240, 240);
+}
+.instructor .instructor_wrapper .profile .profile_wrapper .skill strong {
+  padding-bottom: 4px;
+  color: rgb(46, 125, 79);
+}
+.instructor .instructor_wrapper .profile .profile_wrapper .skill ul {
+  line-height: 2;
+}
+.instructor .instructor_wrapper .profile .profile_wrapper .skill ul li span {
+  margin-right: 4px;
+  color: rgb(46, 125, 79);
+}
+.instructor .instructor_wrapper .profile img {
+  width: 40%;
+  height: 20%;
+  border: solid 1px rgb(34, 34, 34);
+}
+.instructor .instructor_wrapper .work {
+  padding: 8px 0;
+}
+.instructor .instructor_wrapper .work strong {
+  padding-bottom: 4px;
+  text-align: center;
+  color: rgb(46, 125, 79);
+}
+.instructor .instructor_wrapper .work dl {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 2;
+}
+.instructor .instructor_wrapper .work dl dt {
+  width: 10%;
+}
+.instructor .instructor_wrapper .work dl dd {
+  width: 90%;
+}
+
+.summary dl {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+.summary dl dt {
+  width: 10%;
+  padding: 4px;
+  padding-left: 8px;
+  background-color: rgb(46, 125, 79);
+  text-align: left;
+  color: #fff;
+}
+.summary dl dd {
+  width: 90%;
+  padding: 4px;
+}
+.summary dl dd strong {
+  color: rgb(204, 51, 51);
+}
+.summary dl .border1 {
+  background-color: rgb(240, 240, 240);
+}
+
+.form {
+  padding-bottom: 16px;
+  background-color: rgb(46, 125, 79);
+}
+.form h2 span {
+  color: rgb(232, 208, 122);
+}
+.form .wpcf7, .form form {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: #fff;
+}
+.form .wpcf7 .form_title, .form form .form_title {
+  font-size: 9px;
+  font-weight: 700;
+}
+.form .wpcf7 dl dt, .form form dl dt {
+  margin-top: 10px;
+  padding: 4px 0;
+  font-weight: 700;
+}
+.form .wpcf7 dl dt p, .form .wpcf7 dl dt label, .form form dl dt p, .form form dl dt label {
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 9px;
+}
+.form .wpcf7 dl dd, .form form dl dd {
+  border: solid 1px rgb(153, 153, 153);
+  line-height: 3;
+}
+.form .wpcf7 dl dd p, .form form dl dd p {
+  margin: 0;
+  font-size: 12px;
+}
+.form .wpcf7 dl dd input, .form .wpcf7 dl dd select, .form form dl dd input, .form form dl dd select {
+  width: 100%;
+  padding: 0 4px;
+}
+.form .wpcf7 .wpcf7-submit, .form .wpcf7 .form-btn, .form form .wpcf7-submit, .form form .form-btn {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 16px;
+  padding: 8px 0;
+  background-color: rgb(204, 51, 51);
+  border: solid 2px rgb(204, 51, 51);
+  border-radius: 30px;
+  font-size: 12px;
+  color: #fff;
+  transition: all 0.6s ease;
+}
+.form .wpcf7 .wpcf7-submit:hover, .form .wpcf7 .form-btn:hover, .form form .wpcf7-submit:hover, .form form .form-btn:hover {
+  background-color: #fff;
+  color: rgb(204, 51, 51);
+}
+.form .wpcf7 .wpcf7-spinner, .form form .wpcf7-spinner {
+  display: none;
+}
+.form .wpcf7 p, .form form p {
+  text-align: center;
+  font-size: 8px;
+}/*# sourceMappingURL=style.css.map */

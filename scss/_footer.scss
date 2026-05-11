@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @use "mixin"as m;
 @use "variable"as v;
 
@@ -18,25 +17,4 @@ footer {
             max-width: 460px;
         }
     }
-=======
-@use "mixin"as m;
-@use "variable"as v;
-
-
-footer {
-    text-align: center;
-    background-color: v.$base-color;
-    font-size: 6px;
-    color: #fff;
-    .copy {
-        width: 100%;
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 16px 0;
-        background-color: v.$font-color;
-        @include m.sp {
-            max-width: 460px;
-        }
-    }
->>>>>>> ef0d8fcecf4ba6012413300936341911d88e3cb1
 }

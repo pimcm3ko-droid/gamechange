@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $bp: 900px;
 
 @mixin sp {
@@ -6,12 +5,3 @@ $bp: 900px;
         @content;
     }
 }
-=======
-$bp: 900px;
-
-@mixin sp {
-    @media(max-width: $bp){
-        @content;
-    }
-}
->>>>>>> ef0d8fcecf4ba6012413300936341911d88e3cb1

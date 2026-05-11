@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @use "mixin"as m;
 @use "variable"as v;
 
@@ -149,4 +150,157 @@
             }
         }
     }
+=======
+@use "mixin"as m;
+@use "variable"as v;
+
+
+.mainvisual {
+    margin-top: 35px;
+    padding: 8px 24px;
+    background-color: #fff;
+    // background-color: rgba(51, 51, 51, 1);
+    text-align: center;
+    color: #fff;
+    // .top_text {
+    //     width: 70%;
+    //     margin: 0 auto;
+    //     border: solid 1px v.$accent-color-yellow;
+    //     font-size: 13px;
+    //     color: v.$accent-color-yellow;
+    // }
+    // .mv_wrapper {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     padding-top: 8px;
+    //     .catchphrase {
+    //         width: 60%;
+    //         font-size: 32px;
+    //         font-family: "Noto Serif JP", sans-serif;
+    //         span{
+    //             color: v.$sub-color;
+    //         }
+    //     }
+    //     .mv_img {
+    //         width: 40%;
+    //         .inner {
+    //             position: relative;
+    //             display: inline-block;
+    //             box-shadow: inset 0px 0px 17px 11px rgba(51, 51, 51, 1);
+    //             img {
+    //                 width: 100%;
+    //                 height: 260px;
+    //                 vertical-align: bottom;
+    //             }
+    //         }
+    //         .inner::after {
+    //             position: absolute;
+    //             content: "";
+    //             top: 0;
+    //             bottom: 0;
+    //             left: 0;
+    //             right: 0;
+    //             box-shadow: inset 0px 0px 17px 11px rgba(51, 51, 51, 1);
+    //         }
+    //     }
+    // }
+    // .num {
+    //     margin-top: 32px;
+    //     align-items: center;
+    //     text-align: center;
+    //     .mv_arrow {
+    //         font-size: 12px;
+    //         span {
+    //             margin: 0 40px;
+    //             color: #fff;
+    //         }
+    //     }
+    //     .mv_beforeafter {
+    //         .before {
+    //             padding-left: 32px;
+    //             font-size: 24px;
+    //             color: v.$accent-color-yellow;
+    //         }
+    //         .after {
+    //             padding-left: 48px;
+    //             font-size: 40px;
+    //             color: v.$sub-color;
+    //         }
+    //     }
+    // }
+    img {
+        height: auto;
+        object-fit: cover;
+    }
+    .mv_form {
+        margin-top: 16px;
+        padding-bottom: 16px;
+        text-align: left;
+        .wpcf7,form {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 8px;
+            background-color: #fff;
+            // background-color: v.$accent-color-grey;
+            .mv_form_title {
+                font-size: 12px;
+                font-weight: 700;
+                color: v.$font-color;
+            }
+            dl {
+                dt {
+                    margin-top: 10px;
+                    padding: 4px 0;
+                    font-weight: 700;
+                    color: v.$font-color;
+                    p,label {
+                        margin-bottom: 0;
+                        text-align: left;
+                        font-size: 9px;
+                    }
+                }
+                dd {
+                    border: solid 1px v.$accent-color-black;
+                    line-height: 3;
+                    p {
+                        margin: 0;
+                        font-size: 12px;
+                        // span {
+                        // }
+                    }
+                    input,select {
+                        width: 100%;
+                        padding: 0 4px;
+                    }
+                }
+            }
+            .wpcf7-submit,.form-btn {
+                position: relative;
+                width: 100%;
+                margin: 0 auto;
+                margin-top: 8px;
+                padding: 8px 0;
+                background-color: v.$sub-color;
+                border: solid 2px v.$sub-color;
+                border-radius: 30px;
+                font-size: 12px;
+                color: #fff;
+                transition: all 0.6s ease;
+            }
+            .wpcf7-submit:hover,.form-btn:hover {
+                background-color: #fff;
+                color: v.$sub-color;
+            }
+            .wpcf7-spinner {
+                display: none;
+            }
+            p {
+                margin: 8px 0;
+                text-align: center;
+                font-size: 10px;
+                color: v.$font-color;
+            }
+        }
+    }
+>>>>>>> ef0d8fcecf4ba6012413300936341911d88e3cb1
 } 

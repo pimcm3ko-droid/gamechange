@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset"UTF-8";
 
 @use "mixin"as m;
@@ -7,4 +8,15 @@
 @use "footer";
 @use "mainvisual";
 @use "contents";
+=======
+@charset"UTF-8";
+
+@use "mixin"as m;
+@use "variable"as v;
+@use "common";
+@use "header";
+@use "footer";
+@use "mainvisual";
+@use "contents";
+>>>>>>> ef0d8fcecf4ba6012413300936341911d88e3cb1
 @use "form";

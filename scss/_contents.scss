@@ -22,6 +22,7 @@
             padding: 8px;
             background-color: v.$sub-color;
             text-align: center;
+            font-size: 21px;
             color: #fff;
         }
     }
@@ -48,6 +49,8 @@
         }
         .example_text_contents {
             li {
+                font-size: 16px;
+                font-weight: 700;
                 color: v.$sub-color;
             }
         }
@@ -120,19 +123,40 @@
         }
     }
     .btn {
+        position: relative;
+        display: block;
         width: 100%;
+        max-width: 340px;
+        margin: 12px auto;
         padding: 10px 0;
-        background: v.$main-color;
+        background: v.$sub-color;
         text-align: center;
-        border: solid 2px v.$main-color;
+        border-radius: 50px;
+        border: solid 2px v.$sub-color;
         .CTA {
             padding-bottom: 4px;
-            font-size: 12px;
+            font-size: 16px;
         }
     }
     .btn:hover {
         background: #fff;
-        color: v.$main-color;
+        color: v.$sub-color;
+    }
+    .btn::after {
+        /* Border方式 */
+        content: "";
+        position: absolute;
+        display: block;
+        top: 50%;
+        right: 10%;
+        border-style: solid;
+        border-width: 12px 0px 12px 20px;
+        border-color: transparent transparent transparent #FFF;
+        transform: translateY(-50%);
+        transition: all 0.6s ease;
+    }
+    .btn:hover::after {
+        border-color: transparent transparent transparent v.$sub-color;
     }
 }
 
@@ -180,6 +204,93 @@
     }
 }
 
+.do {
+    background-color: #FFF;
+    h2 {
+        color: v.$accent-color-yellow_2;
+    }
+    .do_items {
+        padding: 16px;
+        padding-top: 0;
+        li {
+            width: 100%;
+            max-width: 450px;
+            margin: 10px auto;
+            border: 4px solid v.$sub-color;
+            .item_title {
+                display: flex;
+                justify-content: space-between;
+                padding: 12px 8px;
+                background-color: v.$sub-color;
+                .content1 {
+                    width: 28%;
+                    height: 10%;
+                    margin-right: 20px;
+                    padding:  12px 8px;
+                    background-color: #FFF;
+                    text-align: center;
+                    overflow-wrap: break-word;
+                    word-break: break-word;
+                    font-size: 30px;
+                    color: v.$sub-color;
+                    @include m.sp {
+                        font-size: 22px;
+                    }
+                }
+                .content2 {
+                    width: 72%;
+                    font-size: 23px;
+                    color: v.$accent-color-yellow_2;
+                    @include m.sp {
+                        font-size: 20px;
+                    }
+                    span {
+                        display: block;
+                        text-align: right;
+                        font-size: 23px;
+                        font-weight: bold;
+                        color: v.$accent-color-yellow_2;
+                        @include m.sp {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .item_inner {
+                padding: 10px;
+                img {
+                    height: auto;
+                }
+                p {
+                    font-size: 18px;
+                    @include m.sp {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .item1 {
+            .item_inner {
+                padding: 8px;
+                &::after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+                img {
+                    float: right;
+                    width: 100%;
+                    max-width: 200px;
+                    height: auto;
+                    margin: 0 0 8px 8px;
+                    object-fit: contain;
+                }
+
+            }
+        }
+    }
+}
+
 .content {
     background-color: v.$accent-color-red;
     ol {
@@ -216,7 +327,7 @@
                 line-height: 2.0;
                 li {
                     span {
-                        margin-right: 8px;
+                        // margin-right: 8px;
                         padding: 4px;
                     }
                 }
@@ -245,7 +356,7 @@
             ul {
                 li {
                     span {
-                        margin-right: 8px;
+                        // margin-right: 8px;
                         color: v.$accent-color-black;
                     }
 
@@ -262,10 +373,32 @@
         padding: 16px;
         background-color: #fff;
         .profile {
-            display: flex;
-            justify-content: space-between;
+            padding: 8px;
+
+            &::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+            img {
+                float: right;
+                width: 100%;
+                max-width: 170px;
+                height: 240px;
+                margin: 0 0 16px 16px;
+                border: solid 1px v.$font-color;
+            }
+
             .profile_wrapper {
                 margin: 8px;
+            
+        
+        // .profile {
+        //     display: flex;
+        //     justify-content: space-between;
+        //     .profile_wrapper {
+        //         margin: 8px;
                 .profile_text,.skill {
                     padding: 8px 0;
                 }
@@ -309,11 +442,11 @@
                     }
                 }
             }
-            img {
-                width: 40%;
-                height: 20%;
-                border: solid 1px v.$font-color;
-            }
+            // img {
+            //     width: 40%;
+            //     height: 20%;
+            //     border: solid 1px v.$font-color;
+            // }
         }
         .work {
             padding: 8px 0;
@@ -343,15 +476,15 @@
         flex-wrap: wrap;
         font-size: 12px;
         dt {
-            width: 10%;
+            width: 13%;
             padding: 4px;
             padding-left: 8px;
             background-color: v.$main-color;
-            text-align: left;
+            text-align: center;
             color: #fff;
         }
         dd {
-            width: 90%;
+            width: 87%;
             padding: 4px;
             strong {
                 color: v.$sub-color;

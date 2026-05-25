@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <body>
     <header>
         <h1>無料セミナー | 限定30社</h1>
@@ -13,9 +12,7 @@
             <div class="mv_wrapper">
                 <p class="catchphrase">縮小する<br>塗装業界で<br>前年比<span>30</span>％<br>成長した<br>会社の戦略を<br>公開</p>
                 <div class="mv_img">
-                    <div class="inner">
-                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/gamechange31.jpg' ); ?>" alt="メインビジュアル">
-                    </div>
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/gamechange31 1.png' ); ?>" alt="メインビジュアル">
                     <p class="mv_name">登壇者：嘉和知 宗一郎</p>
                 </div>
             </div>
@@ -23,8 +20,8 @@
                 <p class="mv_arrow">年商<span>→</span>年商</p>
                 <p class="mv_beforeafter"><span class="before">1.1億</span><span class="after">1.5億</span></p>
             </div> -->
-            <img src="<?php echo esc_url( get_template_directory_uri() .'/img/mv.png' ); ?>" alt="メインビジュアル">
-
+            <img src="<?php echo esc_url( get_template_directory_uri() .'/img/FV.webp' ); ?>" alt="メインビジュアル">
+            
             <div class="mv_form">
                 
             <?php echo do_shortcode('[contact-form-7 id="b668266" title="無題"]'); ?>
@@ -47,17 +44,18 @@
                 <p>一つでも当てはまるなら、今回のセミナーは必ずヒントになります。</p>
             </div>
 
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/img/img2.png' ); ?>" alt="作業員の画像">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/img/img2.webp' ); ?>" alt="作業員の画像">
         </section>
 
         <section class="example" id="">
-            <h2 class="section_title bg_color2">成功事例</h2>
+            <h2 class="section_title bg_color2">事実例</h2>
             <p class="example_subtitle">なぜ、年商1億の会社が<br><span>"利益の出ない体質"</span>から<br>抜け出せたのか？</p>
-            
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/img/image 3.webp' ); ?>" alt="困った社長の顔写真">
             <div class="example_text">
                 <p>ある塗装会社様は、年商<span>1億円</span>を超えていたものの大きな課題を抱えていました。</p>
                 <p>売上は伸びているのに、なぜか利益が残らない。そんな状況が続いていたのです。</p>
-                <p>自社集客を強化しようとコンサル会社を導入したものの、思うような成果は出ませんでした。そこで、ポータルサイトへの依存を強め、案件数を増やす方向へと舵を切りました。</p>
+                <p>自社集客を強化しようとコンサル会社を導入したものの、思うような成果は出ませんでした。そこで、<span>ポータルサイトへの依存を強め、</span>案件数を増やす方向へと舵を切りました。</p>
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/image 4.webp' ); ?>" alt="ポータルのイメージ画像">
                 <p>すると、確かに売り上げは上がりました。しかし、その裏で新たな問題が発生していました。</p>
                 <ul class="example_text_contents">
                     <li>・手数料で利益が削られる</li>
@@ -69,6 +67,7 @@
                 <p>利益が出なければ賞与は出ません。すると、優秀な人材から辞めていきます。売り上げはあるのに、組織が弱い。このままでは、じりじりと体力が削られていく”じり貧”の状態でした。</p>
                 <p>そこで社長は決断します。<strong>「このままではダメだ」</strong></p>
                 <p><span>表面的な改善ではなく、会社全体を根本的にゲームチェンジ（株）とともに見直すことにしました。</span></p>
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/image 5.webp' ); ?>" alt="明るい顔の社長">
                 <ul>
                     <li>・チラシの内容を再設計</li>
                     <li>・HPコンテンツを抜本改善</li>
@@ -108,7 +107,7 @@
                 <p>参加費無料 / オンライン開催</p>
             </a>
             
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/img/img1.jpg' ); ?>" alt="作業員の画像">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/img/img1.webp' ); ?>" alt="作業員の画像">
         </section>
 
         <section class="obtain" id="">
@@ -134,6 +133,49 @@
                 </ul>
                 <p>業界自体が厳しい時代に突入しています。今後は、<span>「反響を安定して取れる会社」</span>と<span>「取れない会社」</span>で二極化します。</p>
             </div>
+        </section>
+
+        <section class="do">
+            <h2 class="section_title bg_color2">やったことは”自社集客の仕組化”です</h2>
+
+            <ul class="do_items">
+                <li class="item1">
+                    <h3 class="item_title">
+                        <strong class="content1">Web</strong>
+                        <strong class="content2">問い合わせ数10件<br><span>→30件へ。</span></strong>
+                    </h3>
+                    <div class="item_inner">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/img_web.webp' ); ?>" alt="導線のイメージ画像">
+                        <p>チラシ・SNS・現場・口コミ――<br>すべての導線をWEBへ集約。</p>
+                        <p>「見られるだけの」のホームページではなく、”問い合わせにつながる導線”へ再設計しました。</p>
+                        <p>価格比較ではなく、「この会社に頼みたい」を作るWEB戦略により、問い合わせ数が大幅アップ。</p>
+                    </div>
+                </li>
+                <li class="item2">
+                    <h3 class="item_title">
+                        <strong class="content1">チラシ</strong>
+                        <strong class="content2">来場特典6,000円で、<br>”今すぐ動く理由”を作る。</strong>
+                    </h3>
+                    <div class="item_inner">
+                        <p>ただ配るだけのチラシではありません。</p>
+                        <p>「とりあえず相談してみよう」と思わせる来場特典設計・オファー設計・紙面構成を徹底。</p>
+                        <p>他社が真似できない<br>”反響が取れるチラシ導線”を構築しました。</p>
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/img_チラシ.webp' ); ?>" alt="チラシの画像">
+                    </div>
+                </li>
+                <li class="item3">
+                    <h3 class="item_title">
+                        <strong class="content1">近隣</strong>
+                        <strong class="content2">”現場の近く”から、<br>毎月3件集客できる仕組化へ。</strong>
+                    </h3>
+                    <div class="item_inner">
+                        <p>現場イメージシートと近隣チラシを連動。</p>
+                        <p>工事現場そのものを<br>”24時間働く広告媒体”として活用しました。</p>
+                        <p>「近くで施工している安心感」が信頼につながり、現場近隣から毎月安定して反響が生まれる状態へ。</p>
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/img_近隣.webp' ); ?>" alt="現場とチラシの画像">
+                    </div>
+                </li>
+            </ul>
         </section>
 
         <section class="content" id="">
@@ -176,6 +218,8 @@
 
             <div class="instructor_wrapper">
                 <div class="profile">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/gamechange31.webp' ); ?>" alt="講師の写真">
+                    
                     <div class="profile_wrapper">
                         <div class="name">
                             <p>Soichiro Kawachi</p>
@@ -196,8 +240,6 @@
                             </ul>
                         </div>
                     </div>
-
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/gamechange31.jpg' ); ?>" alt="講師の写真">
                 </div>
                 <div class="work">
                     <strong>ー業務内容ー</strong>
@@ -226,7 +268,7 @@
                 <dt>形式</dt>
                 <dd>オンライン</dd>
                 <dt>時間</dt>
-                <dd class="border1">90分</dd>
+                <dd class="border1">全日程　10時～11時</dd>
                 <dt>定員</dt>
                 <dd><strong>30社</strong>（先着順）</dd>
                 <dt>対象</dt>
@@ -241,6 +283,5 @@
         
             </section>
     </main>
-
 
 <?php get_footer(); ?>

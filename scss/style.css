@@ -188,7 +188,7 @@ footer .copy {
   background-color: rgb(204, 51, 51);
   border: solid 2px rgb(204, 51, 51);
   border-radius: 30px;
-  font-size: 12px;
+  font-size: 16px;
   color: #fff;
   transition: all 0.6s ease;
 }
@@ -202,8 +202,12 @@ footer .copy {
 .mainvisual .mv_form .wpcf7 p, .mainvisual .mv_form form p {
   margin: 8px 0;
   text-align: center;
-  font-size: 10px;
+  font-size: 14px;
   color: rgb(34, 34, 34);
+}
+
+.wpcf7-response-output {
+  color: #000;
 }
 
 .problem {
@@ -227,6 +231,7 @@ footer .copy {
   padding: 8px;
   background-color: rgb(204, 51, 51);
   text-align: center;
+  font-size: 21px;
   color: #fff;
 }
 
@@ -252,6 +257,8 @@ footer .copy {
   padding-bottom: 8px;
 }
 .example .example_text .example_text_contents li {
+  font-size: 16px;
+  font-weight: 700;
   color: rgb(204, 51, 51);
 }
 .example .example_text .example_highlight {
@@ -322,19 +329,40 @@ footer .copy {
   font-size: 12px;
 }
 .change .btn {
+  position: relative;
+  display: block;
   width: 100%;
+  max-width: 340px;
+  margin: 12px auto;
   padding: 10px 0;
-  background: rgb(46, 125, 79);
+  background: rgb(204, 51, 51);
   text-align: center;
-  border: solid 2px rgb(46, 125, 79);
+  border-radius: 50px;
+  border: solid 2px rgb(204, 51, 51);
 }
 .change .btn .CTA {
   padding-bottom: 4px;
-  font-size: 12px;
+  font-size: 16px;
 }
 .change .btn:hover {
   background: #fff;
-  color: rgb(46, 125, 79);
+  color: rgb(204, 51, 51);
+}
+.change .btn::after {
+  /* Border方式 */
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: 10%;
+  border-style: solid;
+  border-width: 12px 0px 12px 20px;
+  border-color: transparent transparent transparent #FFF;
+  transform: translateY(-50%);
+  transition: all 0.6s ease;
+}
+.change .btn:hover::after {
+  border-color: transparent transparent transparent rgb(204, 51, 51);
 }
 
 .obtain {
@@ -379,6 +407,99 @@ footer .copy {
   text-align: center;
 }
 
+.do {
+  background-color: #FFF;
+}
+.do h2 {
+  color: rgb(255, 241, 1);
+}
+.do .do_items {
+  padding: 16px;
+  padding-top: 0;
+}
+.do .do_items li {
+  width: 100%;
+  max-width: 450px;
+  margin: 10px auto;
+  border: 4px solid rgb(204, 51, 51);
+}
+.do .do_items li .item_title {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 8px;
+  background-color: rgb(204, 51, 51);
+}
+.do .do_items li .item_title .content1 {
+  width: 28%;
+  height: 10%;
+  margin-right: 20px;
+  padding: 12px 8px;
+  background-color: #FFF;
+  text-align: center;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  font-size: 30px;
+  color: rgb(204, 51, 51);
+}
+@media (max-width: 900px) {
+  .do .do_items li .item_title .content1 {
+    font-size: 22px;
+  }
+}
+.do .do_items li .item_title .content2 {
+  width: 72%;
+  font-size: 23px;
+  color: rgb(255, 241, 1);
+}
+@media (max-width: 900px) {
+  .do .do_items li .item_title .content2 {
+    font-size: 20px;
+  }
+}
+.do .do_items li .item_title .content2 span {
+  display: block;
+  text-align: right;
+  font-size: 23px;
+  font-weight: bold;
+  color: rgb(255, 241, 1);
+}
+@media (max-width: 900px) {
+  .do .do_items li .item_title .content2 span {
+    font-size: 20px;
+  }
+}
+.do .do_items li .item_inner {
+  padding: 10px;
+}
+.do .do_items li .item_inner img {
+  height: auto;
+}
+.do .do_items li .item_inner p {
+  font-size: 18px;
+}
+@media (max-width: 900px) {
+  .do .do_items li .item_inner p {
+    font-size: 14px;
+  }
+}
+.do .do_items .item1 .item_inner {
+  padding: 8px;
+}
+.do .do_items .item1 .item_inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.do .do_items .item1 .item_inner img {
+  float: right;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 0 0 8px 8px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .content {
   background-color: rgb(254, 240, 240);
 }
@@ -416,7 +537,6 @@ footer .copy {
   line-height: 2;
 }
 .target .items .item1 ul li span, .target .items .item2 ul li span {
-  margin-right: 8px;
   padding: 4px;
 }
 .target .items .item1 {
@@ -436,7 +556,6 @@ footer .copy {
   background-color: rgb(153, 153, 153);
 }
 .target .items .item2 ul li span {
-  margin-right: 8px;
   color: rgb(153, 153, 153);
 }
 
@@ -449,8 +568,20 @@ footer .copy {
   background-color: #fff;
 }
 .instructor .instructor_wrapper .profile {
-  display: flex;
-  justify-content: space-between;
+  padding: 8px;
+}
+.instructor .instructor_wrapper .profile::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.instructor .instructor_wrapper .profile img {
+  float: right;
+  width: 100%;
+  max-width: 170px;
+  height: 240px;
+  margin: 0 0 16px 16px;
+  border: solid 1px rgb(34, 34, 34);
 }
 .instructor .instructor_wrapper .profile .profile_wrapper {
   margin: 8px;
@@ -491,11 +622,6 @@ footer .copy {
   margin-right: 4px;
   color: rgb(46, 125, 79);
 }
-.instructor .instructor_wrapper .profile img {
-  width: 40%;
-  height: 20%;
-  border: solid 1px rgb(34, 34, 34);
-}
 .instructor .instructor_wrapper .work {
   padding: 8px 0;
 }
@@ -522,15 +648,15 @@ footer .copy {
   font-size: 12px;
 }
 .summary dl dt {
-  width: 10%;
+  width: 13%;
   padding: 4px;
   padding-left: 8px;
   background-color: rgb(46, 125, 79);
-  text-align: left;
+  text-align: center;
   color: #fff;
 }
 .summary dl dd {
-  width: 90%;
+  width: 87%;
   padding: 4px;
 }
 .summary dl dd strong {
